@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:16px;
+}
+
+
+.label{
+    flex:1;
+    font-size: 16px;
+    font-weight: 500;
+    color:#000000;
+}
+
+
+.select {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #F0F8FF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    flex:2;
+
+
+    /* reset */
+    box-sizing: border-box;
+    appearance: none;
+
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  }
+
+  .select:focus {
+    background-image:
+      linear-gradient(45deg, green 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, green 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+  
